@@ -3,15 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { TracksComponent } from './tracks/tracks.component';
+import { BibliotecaComponent } from './biblioteca/biblioteca.component';
+import { CuentaComponent } from './cuenta/cuenta.component';
+import { AyudaComponent } from './ayuda/ayuda.component';
+import { LoginComponent } from './login/login.component';
+import { RecuperacionComponent } from './recuperacion/recuperacion.component';
+import { UploadComponent } from './upload/upload.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    InicioComponent,
+    TracksComponent,
+    BibliotecaComponent,
+    CuentaComponent,
+    AyudaComponent,
+    LoginComponent,
+    RecuperacionComponent,
+    UploadComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
