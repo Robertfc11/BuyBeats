@@ -2,7 +2,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg scrolling-navbar navbar-dark elegant-color-dark fixed-top" [containerInside]="false">
 
     <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#"><img class="navbar-logo img-fluid rounded" src="../../assets/img/imgInicio/logo.jpeg"></a></mdb-navbar-brand>
+    <mdb-navbar-brand><a class="navbar-brand" href="#/principal"><img class="navbar-logo img-fluid rounded" src="../../assets/img/imgInicio/logo.jpeg"></a></mdb-navbar-brand>
   
     <!-- Collapsible content -->
     <links>
@@ -62,11 +62,11 @@
             <div class="btn-group" mdbDropdown>
               <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
               <div class="dropdown-menu dropdown-menu-right dropdown-primary">
-                <a class="dropdown-item" href="#">USUARIO</a>
-                <a class="dropdown-item" href="#">CONFIGURACIÓN</a>
-                <a class="dropdown-item" href="#">AYUDA</a>
+                <a class="dropdown-item" [routerLink]="['cuenta']">USUARIO</a>
+                <a class="dropdown-item" [routerLink]="['cuenta']">CONFIGURACIÓN</a>
+                <a class="dropdown-item" [routerLink]="['ayuda']">AYUDA</a>
                 <div class="divider dropdown-divider"></div>
-                <a class="dropdown-item" href="#">CERRAR SESIÓN</a>
+                <a class="dropdown-item" [routerLink]="['login']">CERRAR SESIÓN</a>
               </div>
             </div>
           </a>

@@ -25,7 +25,7 @@ const routes: Routes = [
 
     
   
-    { path: '**', pathMatch: 'full', redirectTo: 'principal'}
+    { path: '**', pathMatch: 'full', redirectTo: 'login'}
     // { path: '**', component: PageNotFoundComponent },
   ];
   
