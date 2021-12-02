@@ -1,8 +1,8 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg scrolling-navbar navbar-dark elegant-color-dark" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg scrolling-navbar navbar-dark elegant-color-dark fixed-top" [containerInside]="false">
 
     <!-- Navbar brand -->
-    <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+    <mdb-navbar-brand><a class="navbar-brand" href="#"><img class="navbar-logo img-fluid rounded" src="../../assets/img/imgInicio/logo.jpeg"></a></mdb-navbar-brand>
   
     <!-- Collapsible content -->
     <links>
@@ -15,17 +15,11 @@
         </li>
 
          <!-- Dropdown -->
-        <li class="nav-item dropdown" routerLinkActive="active" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" [routerLink]="['tracks']" mdbWavesEffect>
-          TRACKS<span class="caret"></span></a>
+        <li class="nav-item" routerLinkActive="active">
+          <a  mdbWavesEffect type="button" class="nav-link waves-light" [routerLink]="['tracks']" mdbWavesEffect>
+          TRACKS</a>
 
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-
-            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="#">GÉNEROS</a>
-            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="#">BPM</a>
-            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="#">PRODUCTORES</a>
-              
-          </div>
+         
         </li>
 
         <li class="nav-item" routerLinkActive="active">

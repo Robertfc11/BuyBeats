@@ -1,1 +1,1000 @@
-<p>tracks works!</p>
+<br>
+<br>
+<br>
+<br>
+<div class="row">
+
+    <!--Barra de navegacion-->
+    <div class="col-md-12 col-sm-12 col-lg-3">
+
+      <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-1 navbar-dark elegant-color-dark" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+      <a class="navbar-brand" href="#">Filtros</a>
+    </mdb-navbar-brand>
+  
+    <!-- Collapsible content -->
+    <links>
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          GÉNEROS<span class="caret"></span></a>
+
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">POP</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">URBANO</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">HIP-HOP</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">RAP</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">REGGAETON</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">ROCK</a>
+            <a class="dropdown-item waves-light" [routerLink]="['tracks']" mdbWavesEffect href="">INDIE</a>
+              
+          </div>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>BPM</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect>PRODUCTORES</a>
+        </li>
+      </ul>
+      <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+  
+        </mdb-navbar>
+      <!--/.Navbar-->
+
+    </div>
+
+
+    <div class="row col-lg-9">
+
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t1.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Desconocidos</p>
+                <p class="mt-0 texto2">Mau y Ricky, Manuel Turizo, Camilo</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Camilo
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Urbano
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame2.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t2.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Baila conmigo</p>
+                <p class="mt-0 texto2">Selena Gómez, Rauw Alejandro</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Selena
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Pop
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame3.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t3.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Mónaco</p>
+                <p class="mt-0 texto2">Lagos, Danny Ocean</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Danny
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Pop
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame4.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t4.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Nena Maldición</p>
+                <p class="mt-0 texto2">Paulo Londra, Lenny Tavárez</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #PLondra
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Pop
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame5.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t5.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Hall of Fame</p>
+                <p class="mt-0 texto2">The Script, will.i.am</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Will.i.am
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #PopRock
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t6.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Porte Exuberante</p>
+                <p class="mt-0 texto2">Natanael Cano, Oscar Maydon</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Nata
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Corridos T
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t7.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Miénteme</p>
+                <p class="mt-0 texto2">Tini Stoessel, María Becerra</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Tini
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Urbano
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t8.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">¿Por qué me haces llorar?</p>
+                <p class="mt-0 texto2">Juan Gabriel</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Juanga
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Regional
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t9.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Nunca es suficiente</p>
+                <p class="mt-0 texto2">Los Ángeles Azules, Natalia Lafourcade</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Natalia
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Cumbia
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t10.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">Háblame de ti</p>
+                <p class="mt-0 texto2">Banda MS de Sergio Lizárraga</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #MS
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #Banda
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t11.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">LEVE</p>
+                <p class="mt-0 texto2">Cartel de Santa</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #babo
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #hip-hop
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      <div class="col-lg-12 fondo vista">
+            
+        <!-- Grid column -->
+        <div class="row">
+
+            <!--Col de ícono-->
+            <div class="col-lg-1">
+
+                <a><mdb-icon fas icon="play-circle" class="icono" size="2x" (click)="frame1.show()"></mdb-icon></a>
+
+            </div>
+
+            <!--Col de imagen-->
+            <div class="col-lg-1">
+
+                <img class="imagen img-fluid rounded" src="../../assets/img/imgTracks/t12.jpg">
+                
+            </div>
+
+            <!--Col de nombre de artista-->
+            <div class="col-lg-4 ">
+
+                <p class="mb-0 texto1">A mí</p>
+                <p class="mt-0 texto2">Rels B</p>
+                
+            </div>
+
+            <!--Col de hastags-->
+            <div class="col-lg-4">
+
+              
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #RelsB
+              </button>
+              <button rippleColor="dark" type="button" class="btn btn-outline-light texto3">
+                #RAP
+              </button>
+              
+
+                
+            </div>
+
+            <!--Col de boton-->
+            <div class="col-lg-2">
+
+                <button mdbBtn type="button" color="primary" mdbWavesEffect class="rounded texto3">Descargar</button>
+                
+            </div>
+
+           
+          
+  
+        </div>
+        <!-- Grid column -->
+
+
+      </div>
+
+      
+
+
+      
+
+
+
+
+
+      </div>
+
+
+
+
+</div>
+
+
+
+
+
+<!--Modal 1-->
+<div mdbModal #frame1="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo">
+        <p class="heading lead">Modal Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame1.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          
+         
+
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        </div>
+          
+
+
+
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        
+        <a type="button" mdbBtn color="primary" class="waves-effect fondo" mdbWavesEffect (click)="frame1.hide()"
+          data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<!--Modal 2-->
+<div mdbModal #frame2="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo">
+        <p class="heading lead">Modal Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame2.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          
+         
+
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        </div>
+          
+
+
+
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        
+        <a type="button" mdbBtn color="primary" class="waves-effect fondo" mdbWavesEffect (click)="frame2.hide()"
+          data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<!--Modal 3-->
+<div mdbModal #frame3="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo">
+        <p class="heading lead">Modal Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame3.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          
+         
+
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        </div>
+          
+
+
+
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        
+        <a type="button" mdbBtn color="primary" class="waves-effect fondo" mdbWavesEffect (click)="frame3.hide()"
+          data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<!--Modal 4-->
+<div mdbModal #frame4="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo">
+        <p class="heading lead">Modal Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame4.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          
+         
+
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        </div>
+          
+
+
+
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        
+        <a type="button" mdbBtn color="primary" class="waves-effect fondo" mdbWavesEffect (click)="frame4.hide()"
+          data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+<!--Modal 2-->
+<div mdbModal #frame5="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog"
+  aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo">
+        <p class="heading lead">Modal Success</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame5.hide()">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+          
+         
+
+
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v64KOxKVLVg" allowfullscreen></iframe>
+        </div>
+          
+
+
+
+
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        
+        <a type="button" mdbBtn color="primary" class="waves-effect fondo" mdbWavesEffect (click)="frame5.hide()"
+          data-dismiss="modal">Cerrar</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+
+

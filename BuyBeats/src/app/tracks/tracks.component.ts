@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
 
 @Component({
   selector: 'app-tracks',
@@ -13,3 +14,4 @@ export class TracksComponent implements OnInit {
   }
 
 }
+
