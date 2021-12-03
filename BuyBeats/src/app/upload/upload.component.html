@@ -1,10 +1,75 @@
-<div class="input-group">
+<header>
+  <h2>Subir un archivo</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <br>
+      <br>
+      <br>
+      <li>
+         <h2>¡Selecciona tu pista!</h2>
+      </li>
+
+      <li>
+      <!--DROP DE ARCHIVO(S)-->
+
+<div class="file-upload-wrapper">
+  <input type="file" id="input-file-max-fs" class="file-upload" data-max-file-size="2M" />
+</div>
+<script>
+  $('.file-upload').file_upload();
+  </script>
+      </li>
+      
+    </ul>
+  </nav>
+  
+  <article>
+    
+    <!--FORMULARIO DE ARCHIVO-->
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="titulo">Título:</label>
+    <input type="text" class="form-control" placeholder="Ingresa un título" id="titulo">
+  </div>
+  <div class="form-group">
+    <label for="artista">Artista</label>
+    <input type="text" class="form-control" placeholder="Ingresa un artista" id="artista">
+  </div>
+  <div class="form-group">
+    <label for="genero">Género</label>
+    <br>
+    <input type="text" name="genero" list="List" placeholder="Selecciona un género">
+    <datalist id="List">
+    <option value="Rap">  
+    <option value="R&B">
+    <option value="Pop">
+    <option value="Funk">
+    <option value="Lo-fi"></option>
+    </datalist>
+  </div>
+
+  <div class="form-group">
+    <label for="bpm">BPM</label>
+    <input type="text" class="form-control" placeholder="Ingresa el BPM de la pista" id="bpm">
+  </div>
+
+  <!--AÑADE UNA IMAGEN A LA CANCION-->
+  <div class="input-group">
     <div class="input-group-prepend">
-      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+      <span class="input-group-text" id="inputGroupFileAddon01">Seleccionar</span>
     </div>
     <div class="custom-file">
       <input type="file" class="custom-file-input" id="inputGroupFile01"
         aria-describedby="inputGroupFileAddon01">
-      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+      <label class="custom-file-label" for="inputGroupFile01">Subir una imagen</label>
     </div>
   </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Subir</button>
+</form>
+  </article>
+</section>
+
