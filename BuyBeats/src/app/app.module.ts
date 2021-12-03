@@ -7,7 +7,6 @@ import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
 import { ModalModule, TooltipModule, PopoverModule, ButtonsModule } from 'angular-bootstrap-md'
 
 
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,6 +19,12 @@ import { LoginComponent } from './login/login.component';
 import { RecuperacionComponent } from './recuperacion/recuperacion.component';
 import { UploadComponent } from './upload/upload.component';
 import { RegistroComponent } from './registro/registro.component';
+import { TsubidasComponent } from './tsubidas/tsubidas.component';
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ModificarComponent } from './modificar/modificar.component';
+
 
 @NgModule({
   declarations: [
@@ -33,11 +38,16 @@ import { RegistroComponent } from './registro/registro.component';
     LoginComponent,
     RecuperacionComponent,
     UploadComponent,
-    RegistroComponent
+    RegistroComponent,
+    TsubidasComponent,
+    ModificarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule, 
+    FormsModule,
+    HttpClientModule,
     MdbCarouselModule,
     ModalModule,
     PopoverModule,

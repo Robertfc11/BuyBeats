@@ -1,0 +1,45 @@
+<br>
+<br>
+<header>
+  <h2>Modifica los datos del track</h2>
+</header>
+
+<section>
+  
+  <article>
+    
+    <!--FORMULARIO DE ARCHIVO-->
+<form action="/action_page.php">
+  <div class="form-group">
+    <label for="titulo">Nombre de la pista:</label>
+    <input type="text" class="form-control col-lg-6" placeholder="Ingresa un título" id="titulo">
+  </div>
+
+  <div class="form-group">
+    <label for="titulo">Duración:</label>
+    <input type="text" class="form-control col-lg-3" placeholder="Duración de la pista" id="titulo">
+  </div>
+
+  <div class="form-group">
+    <label for="genero">Género</label>
+    <input type="text" name="genero" list="List" placeholder="Selecciona un género">
+    <datalist id="List">
+    <option value="Rap">  
+    <option value="R&B">
+    <option value="Pop">
+    <option value="Funk">
+    <option value="Lo-fi"></option>
+    </datalist>
+  </div>
+
+  <div class="form-group">
+    <label for="titulo">Fecha:</label>
+    <input type="date" id="start" name="trip-start"
+       value="2021-12-12"
+       min="2021-01-01" max="2030-12-31">
+  </div>
+  
+</form>
+  </article>
+</section>
+

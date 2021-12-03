@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container{
+    width: auto;
+    max-width:none;
+    margin:auto;
+    margin-top: auto;
+  }
+
+  .lbl-menu{
+    background: #234;
+  }
+
+  .lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color:#fff;
+    cursor: pointer;
+    transition: all 400ms ease;
+  }
+  
+
+  lbl-menu label:hover{
+    background: #28435d;
+  }
+
+  .content{
+    position: relative;
+  }
+
+  .content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding:30px;
+    background: #fff;
+    padding-bottom: 40px;
+  }
+#radio1, #radio2{
+  display: none;
+}
+
+#radio1:checked ~ .tab1,
+#radio2:checked ~ .tab2{
+  opacity: 1;
+  visibility: visible;
+    transform: scale(1);
+}
+
+
+
+  footer {
+    background-color: #c3e4de  ;
+    padding: 50px;
+    text-align: center;
+    color: #242424 ;
+  }
+  
+  .footer-t {
+    background-color: #242424 ;
+    text-align: left;
+    color: #f1f1f1;
+  }
+  
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 500px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  
+  }
+  

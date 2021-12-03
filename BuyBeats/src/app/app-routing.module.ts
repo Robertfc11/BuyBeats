@@ -9,6 +9,8 @@ import { LoginComponent } from './login/login.component';
 import { RecuperacionComponent } from './recuperacion/recuperacion.component';
 import { UploadComponent } from './upload/upload.component';
 import { RegistroComponent } from './registro/registro.component';
+import { TsubidasComponent } from './tsubidas/tsubidas.component';
+import { ModificarComponent } from './modificar/modificar.component';
 
 
 
@@ -22,10 +24,11 @@ const routes: Routes = [
     { path: 'recuperar', component: RecuperacionComponent },
     { path: 'upload', component: UploadComponent },
     { path: 'registro', component: RegistroComponent },
-
+    { path: 'tsubidas', component: TsubidasComponent },
+    { path: 'modificar', component: ModificarComponent },
     
   
-    { path: '**', pathMatch: 'full', redirectTo: 'principal'}
+    { path: '**', pathMatch: 'full', redirectTo: 'login'}
     // { path: '**', component: PageNotFoundComponent },
   ];
   

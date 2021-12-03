@@ -2,40 +2,40 @@
 
 <article>
 <!-- Default form login -->
-<form class="text-center border border-light p-5" action="#!">
+<form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)" class="text-center border border-light p-5" action="#">
 
     <p class="h4 mb-4">Inicio de sesión</p>
 
     <!-- Email -->
-    <input type="email" id="email" class="form-control mb-4" placeholder="E-mail">
+    <input type="email" id="login" class="form-control mb-4" placeholder="Email" formControlName="correo">
 
     <!-- Password -->
-    <input type="password" id="pass" class="form-control mb-4" placeholder="Contraseña">
+    <input type="password" id="password" class="form-control mb-4" placeholder="Contraseña" formControlName="PassArt">
 
     <div class="d-flex justify-content-around">
-        <div>
-            <!-- Remember me -->
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                <label class="custom-control-label" for="defaultLoginFormRemember">Recuérdame</label>
-            </div>
-        </div>
+        
         <div>
             <!-- Forgot password -->
-            <a href="/src/app/recuperacion/recuperacion.component.html">¿Olvidaste tu contraseña?</a>
+            <a href="#recuperar">¿Olvidaste tu contraseña?</a>
         </div>
     </div>
 
     <!-- Sign in button -->
-    <button class="btn btn-info btn-block my-3" style="background-color:#e4c239; border-color: #e4c239" type="submit">Iniciar sesión</button>
+    <input class="btn btn-info btn-block my-3" style="background-color:#e4c239; border-color: #e4c239" type="submit" value="Log In" direct="#!">
 
     <!-- Register -->
     <p>¿No eres miembro?
-           <a href="/src/app/registro/registro.component.html">Registrate</a>
+           <a href="#registro">Registrate</a>
     </p>
 
+    <!-- Remind Password -->
+<div class="alert alert-danger" *ngIf="errorStatus">
+    <p>{{errorMsj}}</p>
+</div>
+
 </form>
-<!-- Default form login -->
+
+
 </article>
 <nav>
 
