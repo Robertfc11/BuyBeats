@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { MdbRippleModule } from 'mdb-angular-ui-kit/ripple';
+import { ModalModule, TooltipModule, PopoverModule, ButtonsModule } from 'angular-bootstrap-md'
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -41,9 +46,21 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule, 
     FormsModule,
     HttpClientModule,
+    MdbCarouselModule,
+    ModalModule,
+    PopoverModule,
+    TooltipModule,
+    ButtonsModule,
+    MdbTabsModule,
+    MdbRippleModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
+
+
 export class AppModule { }
+
+
